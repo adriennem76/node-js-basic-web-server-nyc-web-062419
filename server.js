@@ -3,6 +3,7 @@
 const http         = require('http');
 const finalhandler = require('finalhandler');
 const Router       = require('router');
+const bodyParser = require('body-parser');
 let messages = [];
 
 const router = new Router();
