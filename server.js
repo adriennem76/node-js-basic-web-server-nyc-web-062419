@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 let messages = [];
 
 const router = new Router();
+router.use(bodyParser.json());
 
 router.get('/', (request, response) => {
   // A good place to start!
