@@ -3,6 +3,7 @@
 const http         = require('http');
 const finalhandler = require('finalhandler');
 const Router       = require('router');
+let messages = [];
 
 const router = new Router();
 
