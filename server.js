@@ -20,6 +20,8 @@ const server = http.createServer((request, response) => {
   router(request, response, finalhandler(request, response));
 });
 
+curl -X POST -H "content-type: application/json" http://localhost:3000/message -d '{"id":1,"message":"Our first message."}'
+
 exports.listen = function(port, callback) {
   server.listen(port, callback);
 };
