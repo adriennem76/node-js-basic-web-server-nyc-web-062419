@@ -6,7 +6,7 @@ const Router       = require('router');
 const bodyParser = require('body-parser');
 let messages = [];
 
-const router = new Router();
+const router = new Router({ mergeParams: true });
 router.use(bodyParser.json());
 
 router.get('/', (request, response) => {
