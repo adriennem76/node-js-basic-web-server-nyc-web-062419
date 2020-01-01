@@ -9,7 +9,7 @@ let messages = [];
 const router = new Router({ mergeParams: true });
 router.use(bodyParser.json());
 
-router.get('/', (request, response) => {
+router.get('/message/:id', (request, response) => {
   // A good place to start!
   response.end();https://learn.co/tracks/introduction-to-node-js/intro-to-node-js/async-i-o/building-a-basic-web-server#
 });
